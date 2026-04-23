@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>File Size Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -18,20 +19,22 @@
             <option value="MB">MB</option>
             <option value="GB">GB</option>
             <option value="TB">TB</option>
-            </select>
+        </select>
 
-            <button>Convert</button>
+        <button onclick="convert()">Convert</button>
     </div>
 
     <div>
         <h2>Check File Size</h2>
         <input type="file" id="fileInput" multiple>
-        <button>Check Files</button>
+        <button onclick="checkFiles()">Check Files</button>
     </div>
 
     <div>
         <h2>Result</h2>
         <p id="result"></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
