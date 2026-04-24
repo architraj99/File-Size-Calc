@@ -34,7 +34,3 @@ Started with a very basic layout, then added logic for conversion.
 After that improved the output and handling of inputs.  
 Then worked on the UI to make it look cleaner.  
 Finally added reset and did some small fixes.
-
-- more units
-- auto convert
-- maybe better mobile layout
