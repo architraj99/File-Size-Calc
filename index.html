@@ -6,33 +6,110 @@
 </head>
 <body>
 
-    <h1>File Size Calculator</h1>
-    <p>Convert Data Units/ Storage Space Of A File</p>
+    <div class="page">
 
-    <div>
-        <h2>Unit Converter</h2>
+        <div class="header">
+            <h1>File Size Calculator</h1>
+            <p>A simple tool to convert file sizes and check selected file sizes.</p>
+        </div>
 
-        <input type="number" id="value" placeholder="Enter size">
+        <div class="intro-box">
+            <h2>About this tool</h2>
+            <p>
+                This calculator helps convert common storage units like KB, MB, GB and TB.
+                It can also check the total size of files selected from your device.
+            </p>
+        </div>
 
-        <select id="unit">
-            <option value="KB">KB</option>
-            <option value="MB">MB</option>
-            <option value="GB">GB</option>
-            <option value="TB">TB</option>
-        </select>
+        <div class="main-area">
 
-        <button onclick="convert()">Convert</button>
-    </div>
+            <div class="card">
+                <h2>Unit Converter</h2>
+                <p class="small-text">
+                    Enter the size value and choose the unit you already have.
+                </p>
 
-    <div>
-        <h2>Check File Size</h2>
-        <input type="file" id="fileInput" multiple>
-        <button onclick="checkFiles()">Check Files</button>
-    </div>
+                <div class="form-row">
+                    <label for="value">Enter file size</label>
+                    <input type="number" id="value" placeholder="Example: 2048">
+                </div>
 
-    <div>
-        <h2>Result</h2>
-        <p id="result"></p>
+                <div class="form-row">
+                    <label for="unit">Select current unit</label>
+                    <select id="unit">
+                        <option value="KB">KB - Kilobyte</option>
+                        <option value="MB">MB - Megabyte</option>
+                        <option value="GB">GB - Gigabyte</option>
+                        <option value="TB">TB - Terabyte</option>
+                    </select>
+                </div>
+
+                <button onclick="convert()">Convert Size</button>
+            </div>
+
+            <div class="card">
+                <h2>File Size Checker</h2>
+                <p class="small-text">
+                    Select one or more files and calculate their total size.
+                </p>
+
+                <div class="form-row">
+                    <label for="fileInput">Choose files</label>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+
+                <button onclick="checkFiles()">Check Selected Files</button>
+            </div>
+
+        </div>
+
+        <div class="result-card">
+            <h2>Result</h2>
+            <p id="result">Your result will appear here after calculation.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>File size reference</h2>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <h3>KB</h3>
+                    <p>Kilobyte is used for small files like text files.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>MB</h3>
+                    <p>Megabyte is used for photos and documents.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>GB</h3>
+                    <p>Gigabyte is used for videos and applications.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>TB</h3>
+                    <p>Terabyte is used for large storage devices.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="formula-box">
+            <h2>Basic conversion rules</h2>
+
+            <ul>
+                <li>1 MB = 1024 KB</li>
+                <li>1 GB = 1024 MB</li>
+                <li>1 TB = 1024 GB</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Made using HTML, CSS and JavaScript.</p>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
