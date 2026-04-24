@@ -62,6 +62,12 @@ function checkFiles() {
     document.getElementById("result").innerText =
         "Total: " + 
         kb.toFixed(2) + "KB |" + 
-        mb.toFixed(2) + " MB |" + 
+        mb.toFixed(2) + " MB |" +
         gb.toFixed(2) + " GB ";
+}
+
+function resetAll() {
+    document.getElementById("value").value = "";
+    document.getElementById("fileInput").value = "";
+    document.getElementById("result").innerText = "Your Result Will Appear Here: ";
 }

@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-color: #f2f4f7;
+    background-color: #a4af06;
     margin: 0;
     padding: 0;
 }
@@ -15,13 +15,13 @@ body {
     margin-bottom: 25px;
 }
 
-.header h1 {
+.header h1{
     margin-bottom: 8px;
-    color: #222;
+    color: #c40505;
 }
 
 .header p {
-    color: #555;
+    color: #0a0a0a;
 }
 
 .intro-box {
@@ -29,7 +29,7 @@ body {
     padding: 18px;
     border-radius: 10px;
     border: 1px solid #ddd;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .main-area {
@@ -44,17 +44,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
 }
-
-.card h2 {
-    margin-top: 0;
-    color: #222;
-}
-
-.small-text {
-    font-size: 14px;
-    color: #666;
-}
-
 .form-row {
     margin-top: 12px;
 }
@@ -62,7 +51,6 @@ body {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
 }
 
 input,
@@ -71,58 +59,32 @@ select {
     padding: 10px;
     border: 1px solid #bbb;
     border-radius: 6px;
-    box-sizing: border-box;
 }
 
 button {
     width: 100%;
-    margin-top: 15px;
-    padding: 11px;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
     border-radius: 6px;
     background-color: #2f6fed;
     color: white;
-    font-size: 15px;
 }
 
 button:hover {
-    background-color: #2459c7;
-    cursor: pointer;
+    background-color: #cc0404;
 }
 
 .result-card {
-    background-color: white;
+    background-color: rgb(202, 187, 187);
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ada2a2;
 }
 
 #result {
     font-weight: bold;
-    color: #222;
-}
-
-.info-section {
-    margin-top: 20px;
-}
-
-.info-grid {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.info-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    width: 25%;
-}
-
-.info-card h3 {
-    margin-top: 0;
 }
 
 .formula-box {
@@ -133,41 +95,8 @@ button:hover {
     border: 1px solid #ddd;
 }
 
-.formula-box ul {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.formula-box li {
-    margin: 6px 0;
-}
-
 .footer {
     text-align: center;
     margin-top: 20px;
     color: #777;
-}
-
-@media (max-width: 700px) {
-    .page {
-        width: 90%;
-    }
-
-    .main-area {
-        display: block;
-    }
-
-    .card {
-        width: auto;
-        margin-top: 15px;
-    }
-
-    .info-grid {
-        display: block;
-    }
-
-    .info-card {
-        width: auto;
-        margin-top: 10px;
-    }
 }
